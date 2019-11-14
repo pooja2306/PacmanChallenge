@@ -1,4 +1,4 @@
-package com.pooja.pac.PacmanSimulator;
+package PacmanSimulator;
 
 public enum PacInstructions {
     PLACE,

@@ -1,4 +1,4 @@
-package com.pooja.pac.exception;
+package pacmanchallenge.exception;
 
 public class PacmanException extends Exception {
 

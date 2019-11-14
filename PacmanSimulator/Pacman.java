@@ -1,28 +1,28 @@
-package com.pooja.pac.PacmanSimulator;
+package PacmanSimulator ;
 
-import com.pooja.pac.exception.PacmanException;
+import pacmanchallenge.exception.PacmanException;
 
 public class Pacman {
 
-    private PacPosition PacPosition;
+    private PacPosition pacPosition;
 
-    public PacPacPosition() {
+    public Pacman() {
     }
 
-    public Pacman(PacPosition PacPosition) {
-        this.PacPosition = PacPosition;
+    public Pacman(PacPosition pacPosition) {
+        this.pacPosition = pacPosition;
     }
 
-    public boolean setPacPosition(PacPosition PacPosition) {
-        if (PacPosition == null)
+    public boolean setPacPosition(PacPosition pacPosition) {
+        if (pacPosition == null)
             return false;
 
-        this.PacPosition = PacPosition;
+        this.pacPosition = pacPosition;
         return true;
     }
 
     public boolean move() throws PacmanException {
-        return move(PacPosition.getNextPacPosition());
+        return move(pacPosition.getNextPacPosition());
     }
 
    
@@ -30,28 +30,28 @@ public class Pacman {
         if (newPacPosition == null)
             return false;
 
-        this.PacPosition = newPacPosition;
+        this.pacPosition = newPacPosition;
         return true;
     }
 
     public PacPosition getPacPosition() {
-        return this.PacPosition;
+        return this.pacPosition;
     }
-=
+
     public boolean rotateLeft() {
-        if (this.PacPosition.direction == null)
+        if (this.pacPosition.direction == null)
             return false;
 
-        this.PacPosition.direction = this.PacPosition.direction.leftDirection();
+        this.pacPosition.direction = this.pacPosition.direction.leftDirection();
         return true;
     }
 
 
     public boolean rotateRight() {
-        if (this.PacPosition.direction == null)
+        if (this.pacPosition.direction == null)
             return false;
 
-        this.PacPosition.direction = this.PacPosition.direction.rightDirection();
+        this.pacPosition.direction = this.pacPosition.direction.rightDirection();
         return true;
     }
 

@@ -1,6 +1,6 @@
-package com.pooja.pac.PacmanSimulator;
+package PacmanSimulator ;
 
-import com.pooja.pac.exception.PacmanException;
+import pacmanchallenge.exception.PacmanException;
 
 public class PacPosition {
     int x;
@@ -42,7 +42,7 @@ public class PacPosition {
 
     public PacPosition getNextPacPosition() throws PacmanException {
         if (this.direction == null)
-            throw new ToyRobotException("Invalid robot direction");
+            throw new PacmanException("Invalid robot direction");
 
         
         PacPosition newPacPosition = new PacPosition(this);

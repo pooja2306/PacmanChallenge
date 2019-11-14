@@ -1,5 +1,5 @@
 
-package com.pooja.pac.PacmanSimulator;
+package PacmanSimulator;
 
 
 import java.util.HashMap;

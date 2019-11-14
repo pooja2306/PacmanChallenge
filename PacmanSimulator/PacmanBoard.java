@@ -1,4 +1,4 @@
-package com.pooja.pac.PacmanSimulator;
+package PacmanSimulator ;
 
 public class PacmanBoard implements Board {
 
@@ -11,7 +11,7 @@ public class PacmanBoard implements Board {
     }
 
     @Override
-    public boolean isValidPosition(Position position) {
+    public boolean isValidPosition(PacPosition position) {
         return !(
                 position.getX() > this.columns || position.getX() < 0 ||
                         position.getY() > this.rows || position.getY() < 0
